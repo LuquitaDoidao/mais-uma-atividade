@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // atv 1
+        const pessoa = {
+            nome: "Lais Ribeiro Sinatra",
+            idade: 69,
+            email: "laisribeirosinatra@gmail.com",
+        }
+        console.log(livro.autor)
+
+        // atv 2
+        const livro = {
+            nome: "As Provações de Apolo",
+            autor: "Rick Riordan",
+            anoPublicacao: 2018,
+        }
+
+        // atv 3
+        pessoa.endereco = "Casa da Lais, Bairro da Lais, 123"
+
+        // atv 4
+        pessoa.comprimentar = function() {
+            alert("Olá, meu nome é Lais")
+            console("Olá, meu nome é Lais")
+        }
+
+        // atv 5
+        function funcao(){
+            alert(pessoa)
+        }
+
+        // atv 6
+        const carro = {
+            proprietario:{
+                nome: "Joãozinho",
+                idade: 7
+            },
+            marca: "chvrolet",
+            modelo: "celta"
+
+        }
+
+        // atv 7
+        console.log(carro.proprietario.idade)
+
+        // atv 8
+        function objetificar(objeto, chave, valor){
+            objeto[chave] = valor
+        }
+
+        // atv 9
+        function verifica(objeto, chave){
+            if(objeto[chave]){
+                console.log("true")
+            }else{
+                console.log("false")
+            }
+        }
+
+        // atv 10
+        function arrayDeObjetos(array){
+            let velho = 0
+            let nomeDoVelho = ''
+            for(obj of arrey){
+                if(obj['idade'] > velho){
+                    velho = obj['nome']
+                }
+            }
+            console.log(nomeDoVelho + ' com ' + velho + ' anos')
+        }
+        lista = [
+            pessoa1 = {
+                nome: 'Lucas',
+                idade: 12
+            },
+            pessoa2 = {
+                nome: 'Domitri', 
+                idade: 16
+            }
+        ]
+
+        // atv 11
+        const celular = {
+            cor: "marrom",
+            marca: "iPhone",
+            tamanho: "um palmo",
+            bateria: 100,
+            galeria: 0,
+            tirarFoto(){
+                this.galeria += 1
+                this.bateria -= 0.5
+                alert("Sorriaaaaa!!!!!")
+            },
+            jogar(){
+                this.bateria -= 2
+            },
+            mandarMensagem(){
+                this.bateria -= 1
+            },
+            carregar(){
+                this.bateria += 5
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>
